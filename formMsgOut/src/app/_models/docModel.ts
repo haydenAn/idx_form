@@ -1,0 +1,25 @@
+export class DocModel{
+         id : number;
+         vcFirstName : string;
+         vcMiddleName : string;
+         vcLastName : string;
+         cGender : string;
+         dtDOB : Date;
+         dtDOS : Date;
+         dtNow : Date;
+         bRequireACK : boolean;
+         OLocation : any;
+         OProvider : any;
+         vcExternalID : string;
+         vcPID : string;
+         vcPatientID : string;
+         vcFileExtension : string;
+         vcOrdersToComplete : string;
+         vcAlternateUniqueId : any;
+         vcCurrentPath : string;
+         vcIndexedBy : string;
+         vcCustom : string;
+         vcMember : string;
+         vcSummary : string;
+         vcSerializedObservationData : string;
+}

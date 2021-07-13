@@ -1,0 +1,164 @@
+<style>
+ .main{
+     padding:5rem;
+    max-width: 1200px;
+    margin: auto;
+ }
+ .field div{
+     margin-bottom: 0.5rem;
+ }
+ .field{
+     background-color: #e9ecef96;
+     padding: 2rem 0.5rem;
+     border-radius: 5px;
+ }
+ 
+ hr{
+     width: 100%;
+ }
+ .search{
+    cursor: pointer;
+ }
+ .actions{
+     display:flex;
+     padding: 0;
+     justify-content: flex-end;
+     width: 100%;
+     padding-bottom: 1rem;
+ }
+</style>
+<div class="main">
+
+<div class="actions col-12">
+
+    <button class="btn btn-primary col-sm-2" type="submit" (click)="onSendMsg()">Send Message</button>
+
+    <div class="input-group col-sm-5 m-0">
+        <input type="text" class="form-control"  (change)="inputValueChanged($event)" placeholder="Search by document ID">
+        <div class="input-group-append m-0 search">
+          <span class="input-group-text" (click)="onSearch()">Search</span>
+        </div>
+    </div>
+
+</div>
+<form class="field row g-3">
+
+     <div class="col-sm-2">
+         <label>vcFirstName</label>
+         <input value={{document.vcFirstName}} type="text" class="form-control" readonly>
+         
+     </div>
+     <div class="col-sm-2">
+        <label>vcMiddleName</label>
+        <input value={{document.vcMiddleName}} type="text" class="form-control" readonly>
+    </div>
+    <div class="col-sm-2">
+        <label>vcLastName</label>
+        <input value={{document.vcLastName}} type="text" class="form-control" readonly>
+    </div>
+    <div class="col-sm-2">
+        <label>cGender</label>
+        <input value={{document.cGender}} type="text" class="form-control" readonly>
+    </div>
+
+
+    <div class="col-12">
+    </div>
+
+
+    <div class="col-sm-4">
+        <label>dtDOB</label>
+        <input value={{document.dtDOB}} type="text" class="form-control" readonly>
+    </div>
+    <div class="col-sm-4">
+        <label>dtDOS</label>
+        <input value={{document.dtDOS}} type="text" class="form-control" readonly>
+    </div>
+    <div class="col-sm-4">
+        <label>dtNow</label>
+        <input value={{document.dtNow}} type="text" class="form-control" readonly>
+    </div>
+
+
+    <div class="col-12">
+    </div>
+
+
+    <div class="col-sm-2">
+        <label>bRequireACK</label>
+        <input value={{document.bRequireACK}} type="text" class="form-control" readonly>
+    </div>
+    <div class="col-sm-2">
+        <label>OLocation</label>
+        <input value={{document.OLocation}} type="text" class="form-control" readonly> 
+    </div>
+    <div class="col-sm-4">
+        <label>OProvider</label>
+        <input value={{document.OProvider}} type="text" class="form-control" readonly>
+    </div>
+
+
+    <div class="col-12">
+    </div>
+    <hr>
+
+    <div class="col-sm-2">
+        <label>vcExternalID</label>
+        <input value={{document.vcExternalID}} type="text" class="form-control" readonly>
+    </div>
+    <div class="col-sm-2">
+        <label>vcPID</label>
+        <input value={{document.vcPID}} type="text" class="form-control" readonly>
+    </div>
+    <div class="col-sm-2">
+        <label>vcPatientID</label>
+        <input value={{document.vcPatientID}} type="text" class="form-control" readonly>
+    </div>
+    <div class="col-sm-2">
+        <label>vcFileExtension</label>
+        <input value={{document.vcFileExtension}} type="text" class="form-control" readonly>
+    </div>
+    <div class="col-sm-2">
+        <label>vcOrdersToComplete</label>
+        <input value={{document.vcOrdersToComplete}} type="text" class="form-control" readonly>
+    </div>
+    <div class="col-sm-2">
+        <label> vcAlternateUniqueId</label>
+        <input value={{document.vcAlternateUniqueId}} type="text" class="form-control" readonly> 
+    </div>
+    <div class="col-6">
+        <label>vcCurrentPath</label>
+        <input value={{document.vcCurrentPath}} type="text" class="form-control" readonly> 
+    </div>
+    <div class="col-6">
+        <label>vcIndexedBy</label>
+        <input value={{document.vcIndexedBy}} type="email" class="form-control" readonly>
+    </div>
+
+    <div class="col-12">
+    </div>
+
+
+    <div class="col-3">
+        <label>vcCustom</label>
+        <input value={{document.vcCustom}} type="text" class="form-control" readonly>
+    </div>
+    <div class="col-3">
+        <label>vcMember</label> 
+        <input value={{document.vcMember}} type="text" class="form-control" readonly>
+    </div>
+    <div class="col-3">
+        <label>vcSummary</label>
+        <input value={{document.vcSummary}} type="text" class="form-control" readonly>
+    </div>
+    <div class="col-3">
+        <label>vcSerializedObservationData</label>
+        <input value={{document.vcSerializedObservationData}} type="text" class="form-control" readonly>
+    </div>
+
+ 
+
+</form>
+</div>
+
+
